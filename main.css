@@ -1,0 +1,104 @@
+body{
+    background-image: url("silvia.jpg");
+    font-family: Arial;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+ 
+/* Header Title */
+.header {
+  margin-top: 8%;
+  padding: 20px;
+  text-align: center;
+  position: static;
+  color: white;
+}
+  
+.header h1 {
+  font-size: 50px;
+}
+
+.center{
+  text-align: center;
+}
+
+.button{
+  border-radius: 25px;
+  background-color: white;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  padding:10px;
+  width: 150px;
+  height: 75px;
+  margin: 10px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin: 20px;
+}
+
+.subcard{
+  padding: 20px;
+  background-color: red;
+  margin:20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+  
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: start;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+.footer h1{
+  font-size: 20px;
+}
+.footer p{
+  font-size: 12px;
+}
+
+ /* When last updated */
+ .update{
+    font-size: 11px;
+  }
+
+
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+  
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
