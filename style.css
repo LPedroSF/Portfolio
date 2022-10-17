@@ -262,15 +262,16 @@ nav{
 }
 
 .modal__button{
-  width: 80px;
-  height: 80px;
-  font-size: 50px;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
   border-radius: 50%;
   background-color: #EC262A;
   color:white;
-  position: absolute;
+  position: fixed;
   bottom: 32px;
   right: 40px;
+  z-index: 100;
 }
 
 .modal__half{
@@ -575,5 +576,9 @@ footer{
   .main__content--p {
     font-size: 20px;
     text-align: center;
+  }
+
+  .language{
+    width: 33%;
   }
 }
