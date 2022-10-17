@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel = "stylesheet" href = "style.css">
+  <title>LPSF</title>
+  <script src="index.js"></script>
+  <script src="https://kit.fontawesome.com/aae1ff0b84.js" crossorigin="anonymous"></script>
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function(){
+      emailjs.init("RpmlIx-q7fZuzADpX");
+    })();
+  </script>
+</head>
+
+<body>
+  <section id="landing">
+    <nav>
+      <div class = "logo">LPSF</div>
+      <ul class = "nav__link--list">
+        <li class="nav__link">
+          <a href ="#projects" class = "
+          nav__link--anchor
+          link__hover-effect
+          link__hover-effect--black
+          ">
+            Projects</a>
+        </li>
+        <li onclick="toggleModal()" class="nav__link">
+          <a href ="#contacts" class="
+          nav__link--anchor
+          link__hover-effect
+          link__hover-effect--black
+          ">
+            Contact Me</a>
+        </li>
+        <li onclick="toggleThemeMode()" class="nav__link click" >
+          <a class="nav__link--anchor">
+            <i class="fa-solid fa-lightbulb"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class = "main__content row">
+      <figure>
+        <img src = "https://discord.com/channels/@me/1030237684309966919/1031583030999007242" atl ="Me" class = "box">
+      </figure>
+      <h1 class = "main__content--tittle">Hi! I'm <span class="red__text">Luis Pedro Faria</span>.</h1>
+      <p class="main__content--p"> I'm a <span class="red__text">young professional</span> trying to break into <span class="red__text">software engineering</span> industry.</p>
+    </div>
+    <div class="main__content--icons">
+      <a href="https://github.com/LPedroSF" class="main__content--icons click">
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a href="Assets\MyCV.docx" class="main__content--icons click">
+        <i class="fa-solid fa-file"></i>
+      </a>
+    </div>
+    <figure class="main__content--img">
+      <img src="Assets/helloPic.png" class="img" alt="Hello!">
+    </figure>
+    <button class="modal__button click" onclick ="toggleModal()">
+      <i class="fa-solid fa-envelope"></i>
+    </button>
+    <div class="modal">
+      <div class="modal__half modal__info">
+        <h1 class = "modal__tittle">A little bit of info!</h1>
+        <h3 class = "modal__subtittle">Software Engineer</h3>
+        <p class = "modal__info--para">I'm a <span class="red__text">confident 20 year old professional</span> with a passion for learning and development. 
+          Eager to leverage education and training in <span class="red__text">Software Engineering</span>. 
+          Able to <span class="red__text">adapt to surpass</span> any scenario to achieve my goals.
+          <br>
+          My primarily used languages are <span class="red__text">java, html and css</span>. However, I have used other languages such as <span class="red__text">Python, javascript and C++</span>, I am also willing to learn more.
+        </p>
+      </div>
+      <div class="modal__half modal__contact">
+        <h1 class = "modal__tittle">Want to have a chat?</h1>
+        <h3 class="modal__subtittle">I would love to hear from you!</h3>
+        <form id="contact__form" onsubmit="contact(event)">
+          <div class="form__item">
+            <label class ="form__items--label">Name</label>
+            <input class="input" name="user_name" type="text" required>
+          </div>
+          <div class="form__item">
+            <label class ="form__items--label">Email</label>
+            <input class="input" name="user_email" type="email" required>
+          </div>
+          <div class="form__item">
+            <label class ="form__items--label">Message</label>
+            <textarea class="input" name="message" type="text" required></textarea>
+          </div>
+          <button id="contact__submit" class="form__submit">Send it to me!</button>
+        </form> 
+        <div class="modal__overlay modal__overlay--loading">
+          <i class="fas fa-spinner"></i>
+        </div>
+        <div class="modal__overlay modal__overlay--success">
+          Message has gone through! I will speak to you soon!
+        </div>
+        <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+      </div>
+    </div>
+  </section>
+
+  <section id="languages">
+    <div class="container">
+      <div class="row">
+        <h1 class ="tittle">These are the <span class="red__text">languages</span> I know. </h1>
+        <div class = languages>
+          <figure class = "language">
+            <img class = "language--img" src="Assets\html.png" alt = "HTML">
+            <scan class="language__name">HTML</scan>
+          </figure>
+          <figure class = "language">
+            <img class = "language--img" src="Assets\css.png" alt = "CSS">          
+            <scan class="language__name">CSS</scan>
+          </figure>
+          <figure class = "language">
+            <img class = "language--img" src="Assets\javascript.png" alt = "JavaScript">
+           <scan class="language__name">JavaScript</scan>
+          </figure>
+          <figure class = "language">
+            <img class = "language--img" src="Assets\java.png" alt = "Java">
+            <scan class="language__name">Java</scan>
+          </figure>
+          <figure class = "language">
+            <img class = "language--img" src="Assets\Python.png" alt = "Python">
+           <scan class="language__name">Python</scan>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <div class="row">
+        <h1 class ="tittle">My <span class ="red__text">Projects</span></h1>
+        <ul>
+          <li class = "project">
+            <div class = "project__wrapper">
+              <img class= "project__img" src = "Assets/gymapp.png" alt="GymApp">
+              <div class="project__wrapper--bg">
+              <div class="project__description">
+                <h1 class = "project__description--tittle">GymApp Website</h1>
+                <h3 class = "project__description--subtittle">HTML, CSS, Java</h3>
+                <p class = "project__description--p">Website created for GymApp.</p>
+                <a class = "project__description--links" href ="https://github.com/LPedroSF">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer__container">
+      <div class = "row footer__row">
+        <h1 class = "footer__logo">LPSF</h1>
+          <div class = "footer__links">
+              <a href = "#landing" class ="
+              footer__links--list
+              link__hover-effect
+              link__hover-effect--white
+              ">
+                Home
+              </a>
+              <a href = "https://github.com/LPedroSF" class ="
+              footer__links--list
+              link__hover-effect
+              link__hover-effect--white
+              ">
+                Github
+              </a>
+              <a href = "Assets\MyCV.docx" class ="
+              footer__links--list
+              link__hover-effect
+              link__hover-effect--white
+              ">
+                CV
+              </a>
+              <a href="#" onclick = "toggleModal()" class ="
+              footer__links--list
+              link__hover-effect
+              link__hover-effect--white
+              ">
+                Contact Me
+              </a>
+          </div>
+      </div>
+    </div>
+    <div class = "footer__text">© Created by Luis Faria</div>
+  </footer>
+</body>
+</html>
