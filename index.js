@@ -17,6 +17,10 @@ function contact(event){
     const loading = document.querySelector('.modal__overlay--loading');
     const success = document.querySelector('.modal__overlay--success');
 
+    //template_7kvspbb
+    //service_am6zked
+    //RpmlIx-q7fZuzADpX
+    
     emailjs
         .sendForm(
             'service_am6zked',
