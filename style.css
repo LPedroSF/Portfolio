@@ -230,6 +230,41 @@ nav{
   color:#EC262A;
 }
 
+.scroll-button{
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);;
+}
+
+.scroll{
+  font-size: 20px;
+  color:#EC262A;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll:hover{
+  animation: updown .75s ease infinite;
+}
+
+@keyframes updown{
+  0% {
+    transform: translateY(-3px);
+  }
+
+  50%{
+    transform: translateY(3px);
+  }
+
+  100%{
+    transform: translateY(-3px);
+  }
+}
+
 /*
   Modal Section
 */
