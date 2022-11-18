@@ -1,5 +1,18 @@
 let isModalOpen = false;
 let theme = false;
+const scaleFactor = 1/15;
+
+function moveBackground(event){
+    const icons = document.querySelectorAll(".icon");
+    const x = event.clientX * scaleFactor;
+    const y = event.clientY * scaleFactor;
+
+    for(let i = 0; i < icons.length; ++i){
+        const isOdd = i % 2 !== 0;
+        const boolInt = isOdd ? -1 : 1;
+        icons[i].style.transform = `translate(${x * boolInt}px, ${y * boolInt}px)`
+    }
+}
 
 function toggleThemeMode() {
     theme = !theme;

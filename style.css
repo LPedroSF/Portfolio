@@ -140,7 +140,7 @@ nav,
 }
 
 .dark-theme section{
-  background-color: #2c2828;
+  background-color: #242424;
 }
 
 .dark-theme .link__hover-effect--white::before{
@@ -353,7 +353,7 @@ nav{
 
 .form__submit:hover{
   background-color: #2c2828;
-  border:1px solid #EC262A
+  border:1px solid rgb(236, 38, 42)
 }
 
 .form__submit:active{
@@ -410,6 +410,61 @@ nav{
     transform: rotate(360deg);
   }
 }
+
+/*
+  BACKGROUND ICONS
+*/
+
+.icon{
+  height: 25px;
+  position: fixed;
+}
+
+.icon--0{
+  top: 15vh;
+  left: 15vw;
+}
+
+.icon--1{
+  top: 15vh;
+  left: 50vw;
+}
+
+.icon--2{
+  top: 15vh;
+  left: 75vw;
+}
+
+.icon--3{
+  top: 50vh;
+  left: 15vw;
+}
+
+.icon--4{
+  top: 50vh;
+  left: 50vw;
+}
+
+.icon--5{
+  top: 50vh;
+  left: 75vw;
+}
+
+.icon--6{
+  top: 80vh;
+  left: 15vw;
+}
+
+.icon--7{
+  top: 80vh;
+  left: 50vw;
+}
+
+.icon--8{
+  top: 80vh;
+  left: 75vw;
+}
+
 
 /*
   Language Section
@@ -530,6 +585,7 @@ nav{
 */
 
 footer{
+  position: relative;
   background-color: #2c2828;
   color: white;
   padding: 24px 24px 0 24px;
