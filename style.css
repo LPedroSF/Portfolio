@@ -668,6 +668,16 @@ footer {
   .modal__half {
     width: 100%;
   }
+
+  .projects{
+    flex-direction: column;
+  }
+
+  .clients,
+  .personal{
+    width: 100%;
+    padding: 0;
+  }
 }
 
 @media(max-width: 706px) {
@@ -682,17 +692,6 @@ footer {
   .language {
     width: CALC(100%/3);
   }
-
-  .projects{
-    flex-direction: column;
-  }
-
-  .clients,
-  .personal{
-    width: 100%;
-    padding: 0;
-  }
-
 }
 
 @media(max-width: 450px) {
