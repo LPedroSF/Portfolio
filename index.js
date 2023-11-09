@@ -2,6 +2,14 @@ let isModalOpen = false;
 let theme = false;
 const scaleFactor = 1/15;
 
+function ultraverse() {
+    window.location = "https://luis-internship-lpedrosf.vercel.app";
+}
+
+function bookLibrary() {
+    window.location = "https://book-library-hazel.vercel.app";
+}
+
 function moveBackground(event){
     const icons = document.querySelectorAll(".icon");
     const x = event.clientX * scaleFactor;
