@@ -10,6 +10,10 @@ function bookLibrary() {
     window.location = "https://book-library-hazel.vercel.app";
 }
 
+function twitterClone(){
+    window.location = "https://twitter-clone-rouge-seven.vercel.app/";
+}
+
 function moveBackground(event){
     const icons = document.querySelectorAll(".icon");
     const x = event.clientX * scaleFactor;
